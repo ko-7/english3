@@ -1,60 +1,47 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <!-- ヘッダー -->
+    <div>
+      <v-app-bar color="white" dense>
+        <v-toolbar-title>GG online</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+          <v-btn small text>top</v-btn>
+          <v-btn small text>about</v-btn>
+          <v-btn small text>system</v-btn>
+        </v-toolbar-items>
+      </v-app-bar>
+    </div>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+    <!-- 以下コンテンツ -->
+    <Top />
+  
+  
+      <!-- フッター -->
+      <v-container fluid>      
+        <v-footer color="white" app>
+          <v-layout justify-center>
+            <v-card class="mx-auto px-5" outlined tile>
+              <v-layout justify-center>
+                <v-list class="mx-5 my-2 px-5">
+                  500 yen/month
+                </v-list>
+                <div class="my-3 mx-1">
+                  <v-btn class="px-5" small color="blue lighten-1" dark>E N T R Y</v-btn>
+                </div>
+              </v-layout>
+            </v-card>
+          </v-layout>
+        </v-footer>
+      </v-container>   
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
-export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-};
+  import Top from '@/views/Top.vue'
+  export default {
+    components: {
+      Top,
+    },
+  }
 </script>
