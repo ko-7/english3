@@ -17,7 +17,7 @@
   <v-content>
     <v-container>
       <v-row class="my-5" justify="center">
-        <v-col>
+        <v-col cols="12" md="6">
 
     <!-- 開発用タブ -->
           <!-- <v-list-item link to="/">
@@ -36,16 +36,25 @@
           <Top />
   
     <!-- フッター（登録ページへのリンク） -->
-        <v-container class="my-0 py-0" style="border:solid 1px #DDDDDD;">
+      <v-footer class="my-0 py-0" color="white" app>
+        <v-container class="my-0 py-0">
           <v-row class="my-0 py-0" justify="center">
-            <v-col cols="6" align="center" class="my-0">
-              <v-text class="title">500 yen/month</v-text>
-            </v-col>
-            <v-col cols="6" align="center" class="my-0">
-              <v-btn class="title px-5" block color="blue lighten-1" dark>E N T R Y</v-btn>
+            <v-col cols="12" md="6" class="my-0 py-0">
+                <!-- ※↑フッターのサイズ調整 -->
+              <v-container class="my-0 py-0" style="border:solid 1px #DDDDDD;">
+                <v-row class="my-0 py-0" justify="center">
+                  <v-col cols="6" align="center" class="my-0">
+                    <v-text class="title">500 yen/month</v-text>
+                  </v-col>
+                  <v-col cols="6" align="center" class="my-0">
+                    <v-btn class="title px-5" block color="blue lighten-1" dark>E N T R Y</v-btn>
+                  </v-col>
+                </v-row>
+              </v-container>
             </v-col>
           </v-row>
         </v-container>
+      </v-footer>
       
         </v-col>
       </v-row>
