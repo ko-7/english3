@@ -13,28 +13,31 @@
       </v-app-bar>
     </div>
 
+  <!-- コンテンツとフッターのラッパー（サイズ調整用） -->
+  <v-content>
+    <v-container>
+      <v-row class="my-5" justify="center">
+        <v-col>
+
+    <!-- 開発用タブ -->
+          <!-- <v-list-item link to="/">
+            <v-list-item-content>
+             <v-list-item-title>Top</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link to="/home">
+            <v-list-item-content>
+              <v-list-item-title >Home</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <router-view/> -->
+
     <!-- 以下コンテンツ -->
-    <v-container class="my-5 py-5">
-    <v-list-item link to="/">
-      <v-list-item-content>
-        <v-list-item-title>home</v-list-item-title>
-      </v-list-item-content>
-    </v-list-item>
-    <v-list-item link to="/top">
-      <v-list-item-content>
-        <v-list-item-title >top</v-list-item-title>
-      </v-list-item-content>
-    </v-list-item>
-    </v-container>
-    <router-view/>
-    <Top />
+          <Top />
   
-  
-    <!-- フッター -->
-    <v-footer color="white" app class="my-0 py-0">
-      
+    <!-- フッター（登録ページへのリンク） -->
         <v-container class="my-0 py-0" style="border:solid 1px #DDDDDD;">
-          <v-row class="my-0 py-0">
+          <v-row class="my-0 py-0" justify="center">
             <v-col cols="6" align="center" class="my-0">
               <v-text class="title">500 yen/month</v-text>
             </v-col>
@@ -44,8 +47,11 @@
           </v-row>
         </v-container>
       
-    </v-footer>
-  
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-content>
+
   </v-app>
 </template>
 
