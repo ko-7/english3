@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
+import VueScrollTo from './plugins/vue-scrollto'
 
 import Amplify, * as AmplifyModules from 'aws-amplify' // 追記
 import { AmplifyPlugin } from 'aws-amplify-vue' // 追記
@@ -18,5 +19,6 @@ new Vue({
   router,
   store,
   vuetify,
+  VueScrollTo,
   render: h => h(App)
 }).$mount('#app')

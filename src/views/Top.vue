@@ -2,7 +2,7 @@
   <v-container>
       <!-- Top部分 -->
           <!-- <h2 style="border-bottom:solid 1px #333;">サービス紹介と規約</h2> -->
-      <div>
+      <div id="Top">
         <v-card>
           <v-responsive :aspect-ratio="16/9">
             <iframe class="mb-5" width="100%" height="100%" src="https://www.youtube.com/embed/7GkOtwds3P0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -22,7 +22,7 @@
       </p>
   </v-container>
 
-  <!-- 以下コードは謎！ templateタグの中に要素無いとのエラーでる。 -->
+  <!-- 以下コードは謎！ templateタグの中に要素無いとのエラー出る。 -->
   <!-- <v-content>
     <v-container>
       <v-row class="my-5" justify="center">
