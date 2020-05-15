@@ -7,8 +7,8 @@
         <v-spacer></v-spacer>
         <v-toolbar-items>
           <v-btn small text v-scroll-to="'#Top'" class="mx-0 px-1">top</v-btn>
-          <v-btn small text class="mx-0 px-1">about</v-btn>
-          <v-btn small text class="mx-0 px-1">system</v-btn>
+          <v-btn small text v-scroll-to="'#About'" class="mx-0 px-1">about</v-btn>
+          <v-btn small text v-scroll-to="'#Signup'" class="mx-0 px-1">signup</v-btn>
         </v-toolbar-items>
       </v-app-bar>
     </div>

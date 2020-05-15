@@ -7,7 +7,7 @@ Vue.use(VueScrollTo,{
     //easing:動きの緩急調整
     easing: [0, 0, 0.1, 1],
     //offset: 指定した要素より少し上または下に飛びたいときに使用する
-    offset: -100,
+    offset: -50,
 })
 
 
