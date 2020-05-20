@@ -42,12 +42,12 @@
         </div>
         <v-container>
           <v-row justify="center">
-            <v-col cols="3" align="center"><v-btn text>利用規約</v-btn></v-col>
-            <v-col cols="3" align="center"><v-btn text>プライバシーポリシー</v-btn></v-col>
+            <v-col cols="3" align="center"><v-btn text>【利用規約】</v-btn></v-col>
+            <v-col cols="3" align="center"><v-btn text>【プライバシーポリシー】</v-btn></v-col>
           </v-row>
           <v-row justify="center">
             <v-col cols="auto" align="center">  
-              <p><v-icon>email</v-icon> ggonline@gmail.com</p>
+              <p><v-icon>email</v-icon> 【ggonline@gmail.com】</p>
             </v-col>
           </v-row>
         </v-container>

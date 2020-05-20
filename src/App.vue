@@ -6,9 +6,11 @@
         <v-toolbar-title>GG online</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items>
-          <v-btn small text v-scroll-to="'#Top'" class="mx-0 px-1">top</v-btn>
+          <v-btn small text v-if="language" @click.stop="language = !language" link to="/english" class="mx-0 px-1">English</v-btn>
+          <v-btn small text v-if="!language" @click.stop="language = !language" link to="/" class="mx-0 px-3">日本語</v-btn>
+          <!-- <v-btn small text v-scroll-to="'#Top'" class="mx-0 px-1">top</v-btn>
           <v-btn small text v-scroll-to="'#About'" class="mx-0 px-1">about</v-btn>
-          <v-btn small text v-scroll-to="'#Signup'" class="mx-0 px-1">signup</v-btn>
+          <v-btn small text v-scroll-to="'#Signup'" class="mx-0 px-1">signup</v-btn> -->
         </v-toolbar-items>
       </v-app-bar>
     </div>
@@ -33,7 +35,8 @@
             <router-view/> -->
 
             <!-- 以下コンテンツ -->
-            <Top />
+            <router-view />
+
   
             <!-- フッター（登録ページへのリンク） -->
             <v-footer class="ma-0 pa-0" color="white" app>
@@ -44,10 +47,13 @@
                     <v-container class="ma-0 pa-0" style="border:solid 2px #DDDDDD;">
                       <v-row class="ma-0 pa-0" justify="center">
                         <v-col cols="6" align="center" class="ma-0 px-0 py-2">
-                          <v-text class="title">500 yen/month</v-text>
+                          <!-- <v-btn small text v-if="!language" @click.stop="language = !language" link to="/" class="mx-0 px-3">日本語</v-btn> -->
+                          <v-text  v-if="language" class="title">月額500円</v-text>
+                          <v-text v-if="!language" class="title">500 yen/month</v-text>
                         </v-col>
                         <v-col cols="6" align="center" class="ma-0 px-0 py-2 px-3">
-                          <v-btn class="title px-0 mx-0" block color="blue lighten-1" dark>E N T R Y</v-btn>
+                          <v-btn v-if="language" class="title px-0 mx-0" block color="blue lighten-1" dark>入会する</v-btn>
+                          <v-btn v-if="!language" class="title px-0 mx-0" block color="blue lighten-1" dark>E N T R Y</v-btn>
                         </v-col>
                       </v-row>
                     </v-container>
@@ -65,10 +71,13 @@
 </template>
 
 <script>
-  import Top from '@/views/Top.vue'
+  // import Top from '@/views/Top.vue'
   export default {
+    data: () => ({
+      language: null,
+    }),
     components: {
-      Top,
+      // Top,
     },
   }
 </script>

@@ -1,14 +1,25 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Top.vue'
+// import Top from '../views/Top.vue'
+import Japanese from '../views/Japanese.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
+  // {
+  //   path: '/',
+  //   name: 'Top',
+  //   component: Top
+  // },
+    {
+      path: '/',
+      name: 'Japanese',
+      component: Japanese
+    },
   {
-    path: '/',
-    name: 'Top',
-    component: Home
+    path: '/english',
+    name: 'English',
+    component: () => import(/* webpackChunkName: "about" */ '../views/English.vue')
   },
   {
     path: '/home',
