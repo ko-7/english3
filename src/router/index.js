@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Top from '../views/Top.vue'
-import Japanese from '../views/Japanese.vue'
+import JHome from '../views/JHome.vue'
 
 Vue.use(VueRouter)
 
@@ -13,13 +13,13 @@ Vue.use(VueRouter)
   // },
     {
       path: '/',
-      name: 'Japanese',
-      component: Japanese
+      name: 'JHome',
+      component: JHome
     },
   {
-    path: '/english',
-    name: 'English',
-    component: () => import(/* webpackChunkName: "about" */ '../views/English.vue')
+    path: '/ehome',
+    name: 'EHome',
+    component: () => import(/* webpackChunkName: "about" */ '../views/EHome.vue')
   },
   {
     path: '/home',

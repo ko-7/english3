@@ -1,14 +1,12 @@
 <template>
   <v-container>
-      <!-- Top部分 -->
-      <!-- <div> -->
-        <v-card tile flat class="my-5 py-5" id="Top">
-          <!-- v-responsive動画のアスペクト比を固定する -->
-          <v-responsive :aspect-ratio="16/9">
-            <iframe class="mb-5" width="100%" height="100%" src="https://www.youtube.com/embed/7GkOtwds3P0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </v-responsive>
-        </v-card>
-      <!-- </div> -->
+      <!-- サービス説明動画 -->
+      <v-card tile flat class="my-5 py-5" id="Top">
+        <!-- v-responsive動画のアスペクト比を固定する -->
+        <v-responsive :aspect-ratio="16/9">
+          <iframe class="mb-5" width="100%" height="100%" src="https://www.youtube.com/embed/7GkOtwds3P0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </v-responsive>
+      </v-card>
 
       <v-card tile flat class="my-5 py-5">
         <h2 align="center" class="mb-5">GG online</h2>
@@ -16,7 +14,7 @@
       </v-card>
 
       <v-card tile flat class="my-5 py-5" id="About">
-        <h2 align="center" class="mb-5 mr-3"><v-icon large color="red">grade</v-icon>魅力</h2>
+        <h2 align="center" class="mb-5 mr-3"><v-icon large color="red">grade</v-icon>Point!</h2>
         <p align="center">【簡単な魅力説明】</p>
       </v-card>
 
@@ -35,15 +33,15 @@
         <div class="my-5 py-5">
         <h3 class="my-5" align="center">入会条件・注意事項</h3>
         <ul style="list-style:none;">
-          <li>・こちらのオンラインサロンは事前入会制となります。</li>
-          <li>・非公開グループへの参加までは入会申し込み日から10日程度いただいております。</li>
+          <li>・こちらのオンラインコミュニティは事前登録が必要となります。</li>
+          <li>・非公開グループへの参加は混雑状況により、入会申し込み日から最大で10日程度かかるおそれがあります。</li>
           <li>・決済については毎月1日にクレジットカード決済が発生します。(2018年1月以降の記事はすべて閲覧できます)</li>
         </ul>
         </div>
         <v-container>
           <v-row justify="center">
-            <v-col cols="3" align="center"><v-btn text>【利用規約】</v-btn></v-col>
-            <v-col cols="3" align="center"><v-btn text>【プライバシーポリシー】</v-btn></v-col>
+            <v-col cols="12" sm="3" align="center"><ETerms /></v-col>
+            <v-col cols="12" sm="3" align="center"><v-btn text>【プライバシーポリシー】</v-btn></v-col>
           </v-row>
           <v-row justify="center">
             <v-col cols="auto" align="center">  
@@ -60,3 +58,12 @@
 
   </v-container>
 </template>
+
+<script>
+import ETerms from '@/components/English/ETerms.vue'
+export default {
+  components: {
+      ETerms,
+    },
+}
+</script>
