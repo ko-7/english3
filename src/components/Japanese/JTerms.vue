@@ -2,25 +2,112 @@
 
 <template>
   <v-row justify="center">
-    <v-dialog v-model="dialog" width="600px">
+    <v-dialog v-model="dialog" width="800px">
       <template v-slot:activator="{ on }">
+        <!-- モーダルを開くボタン（このボタンを押すと下の<v-card></v-card>の内容が表示される） -->
         <v-btn text v-on="on">【利用規約】</v-btn>
       </template>
       <v-card>
         <v-card-title>
-          <span class="headline">Use Google's location service?</span>
+          <!-- モーダル上部のタイトル -->
+          <span class="headline">利用規約</span>
         </v-card-title>
-        <v-card-text>Lorem ipsum dolor sit amet, semper quis, sapien id natoque elit. Nostra urna at, magna at neque sed sed ante imperdiet, dolor mauris cursus velit, velit non, sem nec. Volutpat sem ridiculus placerat leo, augue in, duis erat proin condimentum in a eget, sed fermentum sed vestibulum varius ac, vestibulum volutpat orci ut elit eget tortor. Ultrices nascetur nulla gravida ante arcu. Pharetra rhoncus morbi ipsum, nunc tempor debitis, ipsum pellentesque, vitae id quam ut mauris dui tempor, aptent non. Quisque turpis. Phasellus quis lectus luctus orci eget rhoncus. Amet donec vestibulum mattis commodo, nulla aliquet, nibh praesent, elementum nulla. Sit lacus pharetra tempus magna neque pellentesque, nulla vel erat.
-          Justo ex quisque nulla accusamus venenatis, sed quis. Nibh phasellus gravida metus in, fusce aenean ut erat commodo eros. Ut turpis, dui integer, nonummy pede placeat nec in sit leo. Faucibus porttitor illo taciti odio, amet viverra scelerisque quis quis et tortor, curabitur morbi a. Enim tempor at, rutrum elit condimentum, amet rutrum vitae tempor torquent nunc. Praesent vestibulum integer maxime felis. Neque aenean quia vitae nostra, tempus elit enim id dui, at egestas pulvinar. Integer libero vestibulum, quis blandit scelerisque mattis fermentum nulla, tortor donec vestibulum dolor amet eget, elit nullam. Aliquam leo phasellus aliquam curabitur metus a, nulla justo mattis duis interdum vel, mollis vitae et id, vestibulum erat ridiculus sit pulvinar justo sed. Vehicula convallis, et nulla wisi, amet vestibulum risus, quam ac egestas.
-          Et vitae, nulla gravida erat scelerisque nullam nunc pellentesque, a dictumst cras augue, purus imperdiet non. Varius montes cursus varius vel tortor, nec leo a qui, magni cras, velit vel consectetuer lobortis vel. Nibh erat et wisi felis leo porttitor, sapien nibh sapien pede mi, sed eget porttitor, repellendus arcu ac quis. Luctus vulputate aut est sem magna, placerat accumsan nunc vestibulum ipsum ac auctor, maecenas lorem in ut nec mauris tortor, doloribus varius sem tortor vestibulum mollis, eleifend tortor felis tempus lacus eu eu. Eleifend vel eu, nullam maecenas mauris nec nunc euismod, tortor porta ridiculus potenti, massa tristique nam magna, et wisi placerat et erat ante. Eget pede erat in facilisis, fermentum venenatis sodales. Ac tortor sociis et non animi tristique, rhoncus malesuada, ut arcu volutpat scelerisque sollicitudin, elit curabitur dui pede purus dolor, integer aenean risus taciti nulla eleifend accumsan. At pulvinar diam parturient, interdum mi velit aliquet et a. Arcu at ac placerat eget justo semper, purus sociis curabitur mi ipsum consequat ut, mollis vestibulum, est ante ornare lacus sem. Neque magna mauris, commodo quisque, praesent semper suscipit lobortis nam. Justo malesuada cursus ac nunc litora nunc. Tellus ac, in lobortis nunc, montes lectus purus fermentum.
-          Ac sit wisi. Sodales aliquam, sed vestibulum nullam arcu sit risus arcu, id luctus vitae lorem nibh, integer nec nullam class cursus mi, purus arcu lectus. Vel ante suscipit volutpat potenti mattis sed, wisi eu placerat aliquam erat, lectus morbi lobortis at assumenda. Consequat neque purus ipsum voluptas odio, netus vestibulum ut nec, suspendisse pellentesque nec enim in. Wisi dictum sed semper a, ipsum erat tellus habitasse est, erat sem ornare, vitae quisque ultricies. Dui sed blandit. Tempor et faucibus justo sed luctus, nec vitae vitae. Nunc nibh pede, ipsum vestibulum aenean leo ante ultricies, nam cras quis sed penatibus amet. In mauris a. Integer metus mauris tortor, et rutrum vestibulum ultricies, ut phasellus in ullamcorper ut mollit, eu justo. Cursus pretium venenatis.
-          Cras pellentesque vel sodales accumsan aenean. Feugiat metus sit nec in aliquet amet, porttitor pretium vulputate massa. Consequat ipsum luctus quisque adipiscing libero. Wisi sollicitudin. Eget vitae ac lobortis, lorem natoque vestibulum et, aliquet faucibus at morbi nibh, vel condimentum. Massa unde orci sed id sed, odio donec congue nec praesent amet. Hymenaeos velit lacus, quis vivamus libero tempus duis, eu nisi eu, ipsum at accumsan pede justo morbi donec, massa et libero sit risus neque tortor. Ut sed sed etiam hendrerit dapibus, quis metus suspendisse nibh.
-          Fringilla tempor felis augue magna. Cum arcu a, id vitae. Pellentesque pharetra in cras sociis adipiscing est. Nibh nec mattis at maecenas, nisl orci aliquam nulla justo egestas venenatis, elementum duis vel porta eros, massa vitae, eligendi imperdiet amet. Nec neque luctus suscipit, justo sem praesent, ut nisl quisque, volutpat torquent wisi tellus aliquam reprehenderit, curabitur cras at quis massa porttitor mauris. Eros sed ultrices. Amet dignissim justo urna feugiat mauris litora, etiam accumsan, lobortis a orci suspendisse. Semper ac mauris, varius bibendum pretium, orci urna nunc ullamcorper auctor, saepe sem integer quam, at feugiat egestas duis. Urna ligula ante. Leo elementum nonummy. Sagittis mauris est in ipsum, nulla amet non justo, proin id potenti platea posuere sit ut, nunc sit erat bibendum. Nibh id auctor, ab nulla vivamus ultrices, posuere morbi nunc tellus gravida vivamus.
-          Mauris nec, facilisi quam fermentum, ut mauris integer, orci tellus tempus diam ut in pellentesque. Wisi faucibus tempor et odio leo diam, eleifend quis integer curabitur sit scelerisque ac, mauris consequat luctus quam penatibus fringilla dis, vitae lacus in, est eu ac tempus. Consectetuer amet ipsum amet dui, sed blandit id sed. Tellus integer, dignissim id pede sodales quis, felis dolorem id mauris orci, orci tempus ut. Nullam hymenaeos. Curabitur in a, tortor ut praesent placerat tincidunt interdum, ac dignissim metus nonummy hendrerit wisi, etiam ut.
-          Semper praesent integer fusce, tortor suspendisse, augue ligula orci ante asperiores ullamcorper. In sit per mi sed sed, mi vestibulum mus nam, morbi mauris neque vitae aliquam proin senectus. Ac amet arcu mollis ante congue elementum, inceptos eget optio quam pellentesque quis lobortis, sollicitudin sed vestibulum sollicitudin, lectus parturient nullam, leo orci ligula ultrices. At tincidunt enim, suspendisse est sit sem ac. Amet tellus molestie est purus magna augue, non etiam et in wisi id. Non commodo, metus lorem facilisi lobortis ac velit, montes neque sed risus consectetuer fringilla dolor. Quam justo et integer aliquam, cursus nulla enim orci, nam cursus adipiscing, integer torquent non, fringilla per maecenas. Libero ipsum sed tellus purus et. Duis molestie placerat erat donec ut. Dolor enim erat massa faucibus ultrices in, ante ultricies orci lacus, libero consectetuer mauris magna feugiat neque dapibus, donec pretium et. Aptent dui, aliquam et et amet nostra ligula.
-          Augue curabitur duis dui volutpat, tempus sed ut pede donec. Interdum luctus, lectus nulla aenean elit, id sit magna, vulputate ultrices pellentesque vel id fermentum morbi. Tortor et. Adipiscing augue lorem cum non lacus, rutrum sodales laoreet duis tortor, modi placerat facilisis et malesuada eros ipsum, vehicula tempus. Ac vivamus amet non aliquam venenatis lectus, sociosqu adipiscing consequat nec arcu odio. Blandit orci nec nec, posuere in pretium, enim ut, consectetuer nullam urna, risus vel. Nullam odio vehicula massa sed, etiam sociis mauris, lacus ullamcorper, libero imperdiet non sodales placerat justo vehicula. Nec morbi imperdiet. Fermentum sem libero iaculis bibendum et eros, eget maecenas non nunc, ad pellentesque. Ut nec diam elementum interdum. Elementum vitae tellus lacus vitae, ipsum phasellus, corporis vehicula in ac sed massa vivamus, rutrum elit, ultricies metus volutpat.
-          Semper wisi et, sollicitudin nunc vestibulum, cursus accumsan nunc pede tempus mi ipsum, ligula sed. Non condimentum ac dolor sit. Mollis eu aliquam, vel mattis mollis massa ut dolor ante, tempus lacinia arcu. Urna vestibulum lorem, nulla fermentum, iaculis ut congue ac vivamus. Nam libero orci, pulvinar nulla, enim pellentesque consectetuer leo, feugiat rhoncus rhoncus vel. Magna sociosqu donec, dictum cursus ullamcorper viverra. Ultricies quis orci lorem, suspendisse ut vestibulum integer, purus sed lorem pulvinar habitasse turpis.
-          +</v-card-text>
+        <!-- モーダルのコンテンツ -->
+        <v-card-text>
+          <p>この利用規約は、「GG ONLINE」(以下、「本コミュニティ」という）が提供するFacebook上のグループを会員が利用する際の規約について定めたものになります。</p>
+
+          <p class="mb-0">（適用範囲）</p>
+          <ol>
+            <li>この規約は、本コミュニティを利用されるすべての会員に適用されます。</li>
+            <li>会員は、本コミュニティの会員登録をした時点で、本規約に同意したものとみなします。</li>
+            <li>会員は、本規約を誠実に遵守してください。</li>
+          </ol>
+          <br>
+
+          <p class="mb-0">（本コミュニティ）</p>
+          <p>本コミュニティは、会員に対し、様々な言語の人種が交流するFacebook上の場所を提供します。</p>
+
+          <p class="mb-0">（会員）</p>
+          <p>会員とは、本規約を承諾の上、「入会申込書」に必要事項を記入し申込みをされたお客様で、本コミュニティが入会を許可したものを言います。</p>
+
+          <p class="mb-0">（会員情報の変更）</p>
+          <p>会員は、入会時の申込書に記載した情報に変更があった場合、速やかに本コミュニティ所定の電子書面にて、会員情報の変更を申請するものとします。</p>
+
+          <p class="mb-0">（入会申込み後のクーリングオフ）</p>
+          <ol>
+            <li>申込者は、本契約書の交付の日を含め、電子書面によって申込みを撤回し解除することができます。</li>
+            <li>契約の解除は申込者が申込みを撤回する旨を記載した電子書面を、コミュニティ宛に発信した時により成立します。</li>
+            <li>申込みの撤回については、手数料を不要とし、申込者は損害賠償または違約金の支払いを請求されることはありません。</li>
+            <li>退会申込みが発信されるまでの間に、更新された会費は、本コミュニティ側に支払わなければなりません。</li>
+          </ol>
+          <br>
+
+          <p class="mb-0">（退会）</p>
+          <p>会員は、退会を希望する場合、退会する月の末日まで（例：４月3日に退会される場合、4月31日まで）に本コミュニティに申請するものとします。なお、引き落としされた当月分の会費は、返金できません。</p>
+
+          <p class="mb-0">（アクティビティ）</p>
+          <p>“アクティビティ”とは、Facebook上の本コミュニティ内での活動の全てを指します。（例：ZoomやFacebookを利用した言語学習、物の交換や販売、イベントの開催など）</p>
+          <ol>
+            <li>会員は本コミュニティの各種アクティビティを規定の会費の支払いの上で参加することができます。</li>
+            <li>アクティビティはいくつでも参加することができます。</li>
+            <li>３．アクティビティの参加の条件などの権限は一時的に主催者に移譲します。</li>
+          </ol>
+          <br>
+
+          <p class="mb-0">（会費）</p>
+          <ol>
+            <li>コミュニティの会費は自動引き落としによる支払いとなります。</li>
+            <li>会費は毎月５００円（税抜）となります。</li>
+            <li>３．口座振替の引き落とし日は、基本的に毎月26日締めで、前月13日から当月12日までの請求は当月26日請求となり、当月13日以降の請求は翌月26日請求となります。</li>
+            <li>2020年9月12日までの間のコミュニティ利用料は無料とする。</li>
+          </ol>
+          <br>
+
+          <p class="mb-0">（遵守事項）</p>
+          <p>会員は、本コミュニティの利用について、次の事項を遵守してください。</p>
+          <ol>
+            <li>会員同士が敬意を持って接すること。</li>
+            <li>自己の成長を促すこと。</li>
+            <li>時間を守ること。</li>
+            <li>失敗を誇ること。</li>
+          </ol>
+          <br>
+
+          <p class="mb-0">（禁止行為）</p>
+          <p>会員は以下の行為は行わないでください。</p>
+          <ol>
+            <li>会員の申込みにおいて虚偽の情報を提供すること。</li>
+            <li>他の会員または主催者に迷惑にかかる行為をすること。</li>
+            <li>他の会員と調和を乱すような行為をすること。</li>
+            <li>本コミュニティ内のデータ環境に対し、不正にアクセスを行うこと。</li>
+            <li>故意、過失を問わず、法律に違反する行為をすること。</li>
+            <li>本コミュニティの運営に支障をきたす行為をすること。</li>
+            <li>公序良俗に違反し、または他人に不利益を与える行為をすること。</li>
+            <li>その他、本コミュニティが不適切と判断をすること。</li>
+          </ol>
+          <br>
+
+          <p class="mb-0">（会員資格の取り消し）</p>
+          <p>本コミュニティは、会員が以下のいずれかに該当した場合、会員の承諾なく本サービスの利用を停止し、会員資格を取り消すことが出来るものとします。</p>
+          <ol>
+            <li>本規約に違反した場合。</li>
+            <li>本コミュニティに対する妨害行為があった場合。</li>
+            <li>アクティビティ主催者または、他の会員からクレームが頻発したとき。</li>
+            <li>本サービスを不正に利用した場合。</li>
+            <li>その他、本コミュニティが不適切と判断した場合。</li>
+          </ol>
+          <br>
+
+          <p class="mb-0">（損害賠償）</p>
+          <p>会員が、本規約に違反した行為、またはその他不正もしくは違法な行為によって本コミュニティに損害を与えた場合、本コミュニティは会員に対して相応の損害賠償の請求を行うことが出来るものとします。</p>
+
+          <p class="mb-0">（免責事項）</p>
+          <p>本コミュニティは、本コミュニティの責に帰すべき事由を除いて、会員が当サービスを利用したこと、利用不能に関連起因する損害に対して賠償責任は負わないものとします。</p>
+          
+          <p>本コミュニティは、本コミュニティの責に帰すべき事由を除いて、会員がしたコミュニティ外での事故およびトラブル等に関してその責任を負わないものとします。</p>
+          
+
+        </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn color="green darken-1" text @click="dialog = false">同意しない</v-btn>

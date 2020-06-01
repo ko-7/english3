@@ -9,6 +9,7 @@
           <!-- 日本語・英語の切り替えボタン -->
           <v-btn small text v-if="language" @click.stop="language = !language" link to="/EHome" class="mx-0 px-1">English</v-btn>
           <v-btn small text v-if="!language" @click.stop="language = !language" link to="/" class="mx-0 px-3">日本語</v-btn>
+          <!-- ページ内リンク用のボタン -->
           <!-- <v-btn small text v-scroll-to="'#Top'" class="mx-0 px-1">top</v-btn>
           <v-btn small text v-scroll-to="'#About'" class="mx-0 px-1">about</v-btn>
           <v-btn small text v-scroll-to="'#Signup'" class="mx-0 px-1">signup</v-btn> -->

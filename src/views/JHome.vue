@@ -1,6 +1,6 @@
 <template>
   <v-container>
-      
+
       <!-- サービス説明動画 -->
       <v-card tile flat class="my-5 py-5" id="Top">
         <!-- v-responsive動画のアスペクト比を固定する -->
